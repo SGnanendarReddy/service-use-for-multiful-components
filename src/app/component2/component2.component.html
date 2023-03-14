@@ -1,0 +1,19 @@
+<p>component2 works!</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Gendar</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let user of user">
+       <tr>
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.gendar}}</td>
+       </tr>
+    </tbody>
+</table>
