@@ -1,19 +1,24 @@
-<p>component1 works!</p>
+<p>component1 works!</p> <pre>With api usung getting data</pre>
 <table class="table table-striped">
     <thead>
     <tr>
         <th>Id</th>
         <th>Name</th>
-        <th>DOB</th>
+        <th>website</th>
         <th>Phone</th>
+        <th>Email</th>
+        <th>Address</th>
     </tr>
  </thead>
 <tbody *ngFor="let users of users">
     <tr>
         <td>{{users.id}}</td>
         <td>{{users.name}}</td>
-        <td>{{users.dob}}</td>
+        <td>{{users.website}}</td>
         <td>{{users.phone}}</td>
+        <td>{{users.email}}</td>
+        <td>{{users.address.city}}</td>
+        
     </tr>
 </tbody>
 </table>
